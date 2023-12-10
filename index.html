@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eredményjelző</title>
+</head>
+<body>
+
+<div class="scoreboard">
+    <div class="team" id="team1" onclick="increaseScore(1)">
+        <h2 onclick="changeName(1)" contenteditable="true">Csapat 1</h2>
+        <div class="score" onclick="decreaseScore(1)">0</div>
+        
+    </div>
+
+    <div class="team" id="team2" onclick="increaseScore(2)">
+        <h2 onclick="changeName(2)" contenteditable="true">Csapat 2</h2>
+        <div class="score" onclick="decreaseScore(2)">0</div>
+        
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
